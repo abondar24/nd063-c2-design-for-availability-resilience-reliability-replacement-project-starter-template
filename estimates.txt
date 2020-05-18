@@ -1,0 +1,9 @@
+Based on selected config(20 gb db, backup every 24hours, response time 15 minutes) RTO/RPO numbers are the following
+
+1) Min RTO for single AZ outage - 18 minutes
+
+2) Min RTO for single region outage - 55 minutes
+
+3) Min RPO for single AZ outage - 33 minutes
+
+4) Min RPO or single region outage - 1h 10 minutes
