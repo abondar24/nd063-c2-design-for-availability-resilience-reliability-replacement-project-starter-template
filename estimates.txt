@@ -2,8 +2,13 @@ Based on selected config(20 gb db, backup every 24hours, response time 15 minute
 
 1) Min RTO for single AZ outage - 18 minutes
 
-2) Min RTO for single region outage - 55 minutes
+2) Min RTO for single region outage - 46 minutes
 
-3) Min RPO for single AZ outage - 33 minutes
+3) Min RPO for single AZ outage - 1 hour 30 minutes
 
-4) Min RPO or single region outage - 1h 10 minutes
+4) Min RPO or single region outage - 3 hours
+
+
+Estimates are based on inavailablity of service time of 2 hour and hours of work lose time of 1 hour.
+Also bandwidth in single AZ is higher than in multiple ones. This affects the recovery time
+as well as assumed bandwidth difference can be up to two times.
