@@ -13,22 +13,22 @@ Parameters:
   PublicSubnet1CIDR:
     Description: Please enter the IP range (CIDR notation) for the public subnet in the first Availability Zone
     Type: String
-    Default: 10.3.20.0/24
+    Default: 10.3.10.0/24
 
   PublicSubnet2CIDR:
     Description: Please enter the IP range (CIDR notation) for the public subnet in the second Availability Zone
     Type: String
-    Default: 10.3.21.0/24
+    Default: 10.3.11.0/24
 
   PrivateSubnet1CIDR:
     Description: Please enter the IP range (CIDR notation) for the private subnet in the first Availability Zone
     Type: String
-    Default: 10.3.40.0/24
+    Default: 10.3.20.0/24
 
   PrivateSubnet2CIDR:
     Description: Please enter the IP range (CIDR notation) for the private subnet in the second Availability Zone
     Type: String
-    Default: 10.3.41.0/24
+    Default: 10.3.21.0/24
 
 Metadata:
   AWS::CloudFormation::Interface:
