@@ -1,0 +1,18 @@
+[ec2-user@ip-10-2-11-186 ~]$  mysql -u admin -p -h uda-1.cbd6ynnaxlg4.eu-west-1.rds.amazonaws.com
+
+MySQL [udacity]> use udacity
+Database changed
+
+MySQL [udacity]> CREATE TABLE primary_test(id BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,  name VARCHAR(255) NOT NULL, test_num INTEGER);
+Query OK, 0 rows affected (0.07 sec)
+
+MySQL [udacity]> INSERT INTO primary_test(name,test_num) VALUE("test primary db connection from ec2",1);
+Query OK, 1 row affected (0.01 sec)
+
+MySQL [udacity]> SELECT * FROM primary_test;
++----+-------------------------------------+----------+
+| id | name                                | test_num |
++----+-------------------------------------+----------+
+|  1 | test primary db connection from ec2 |        1 |
++----+-------------------------------------+----------+
+1 row in set (0.00 sec)
